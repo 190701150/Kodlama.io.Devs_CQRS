@@ -13,6 +13,8 @@ namespace Application.Features.Brands.Commands.CreateBrand
         {
             RuleFor(c => c.Name).NotEmpty();
             RuleFor(c => c.Name).MinimumLength(2);
+            RuleFor(c => c.Name).NotNull();
         }
     }
 }
+
